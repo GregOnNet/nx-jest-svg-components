@@ -1,9 +1,11 @@
 import { TestBed } from '@angular/core/testing';
+import { ComponentSvgModule } from '../../../../libs/component-svg/src';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [ComponentSvgModule],
       declarations: [AppComponent],
     }).compileComponents();
   });
